@@ -37,7 +37,6 @@ jobs:
            
       - name: variablen ausgeben
         run: |
-          echo ${{defaultContext}}
           echo ${{secrets.DOCKERHUB_USERNAME }}
           echo $meinevariable
           
