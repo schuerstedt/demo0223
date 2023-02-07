@@ -34,5 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          
+           
+      - name: variablen ausgeben
+        run: |
+          echo {{defaultContext}}
+          echo ${{ secrets.DOCKERHUB_USERNAME }}
+          echo $meinevariable
+      
           
