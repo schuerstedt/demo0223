@@ -37,8 +37,11 @@ jobs:
            
       - name: variablen ausgeben
         run: |
-          echo {{defaultContext}}
-          echo ${{ secrets.DOCKERHUB_USERNAME }}
+          echo ${{defaultContext}}
+          echo ${{secrets.DOCKERHUB_USERNAME }}
           echo $meinevariable
+          
+      - name: variablen ausgeben
+        run: echo "Dies ist ein Fehler";exit 1
       
           
